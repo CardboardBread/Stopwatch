@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/watchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"
+        android:text="@string/section_watch"/>
+
+    <TextView
+        android:id="@+id/watchDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/watchPauseButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:textSize="40sp"
+        android:text="@string/displayDefault" />
+
+    <Button
+        android:id="@+id/watchStartButton"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="38dp"
+        android:text="@string/StartLabel" />
+
+    <Button
+        android:id="@+id/watchPauseButton"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_alignBaseline="@+id/watchStartButton"
+        android:layout_alignBottom="@+id/watchStartButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="38dp"
+        android:text="@string/PauseLabel" />
+
+    <Button
+        android:id="@+id/watchLapButton"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/LapLabel" />
+
+    <FrameLayout
+        android:id="@+id/watchLapContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignEnd="@+id/watchPauseButton"
+        android:layout_alignStart="@+id/watchStartButton"
+        android:layout_below="@+id/watchStartButton"
+        android:layout_alignParentBottom="true">
+        <ListView
+            android:id="@+id/watchLapList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</RelativeLayout>
