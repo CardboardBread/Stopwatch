@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">Ear Day</string>
+    <string name="app_name">Timer</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="section_watch">Stopwatch</string>
     <string name="section_count">Countdown</string>
+    <string name="section_text">Text</string>
     <string name="displayDefault">00:00:00</string>
     <string name="PauseLabel">Pause</string>
     <string name="UnpauseLabel">Unpause</string>

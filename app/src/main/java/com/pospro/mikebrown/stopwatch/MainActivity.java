@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
             } else if (getArguments().getInt(ARG_SECTION_NUMBER) == 2) {
                 textView.setText(getString(R.string.section_count));
             } else if (getArguments().getInt(ARG_SECTION_NUMBER) == 3) {
-
+                textView.setText(getString(R.string.section_text));
             }
             return rootView;
         }

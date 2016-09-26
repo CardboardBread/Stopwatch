@@ -60,10 +60,12 @@
         android:layout_alignStart="@+id/countStartButton"
         android:layout_below="@+id/countStartButton"
         android:layout_alignParentBottom="true">
+
         <ListView
             android:id="@+id/countLapList"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
     </FrameLayout>
 
 
@@ -77,14 +79,17 @@
         android:layout_alignStart="@+id/countDisplay"
         android:layout_below="@+id/countTitle"
         android:layout_above="@+id/countDisplay">
+
         <NumberPicker
             android:id="@+id/countMinutePicker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
         <NumberPicker
             android:id="@+id/countSecondPicker"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
+
     </LinearLayout>
 
 </RelativeLayout>
